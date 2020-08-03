@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
+docker run -p 3306:3306 --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
